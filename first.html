@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form>
+            <div>
+                <label for="firstNumber">First Number</label>
+                <input type="text" id="firstNumber"/>
+            </div>
+            <br>
+            <div>
+                <label for="secondNumber">Second Number</label>
+                <input type="text" id="secondNumber"/>
+            </div>
+            <br>
+                
+            <div>
+                <label for="secondNumber">sum</label>
+                <input type="text" id="sumNumber" readonly/>
+            </div>
+            
+
+            <br>
+
+            <div>
+                
+                <button type="button" onclick="doAdd()";>ADD</button>
+        </form>
+    </div>
+    <script type="text/javascript">
+        function doAdd(){
+            let first = parseInt(document.getElementById("firstNumber").value) || 0;
+            let second = parseInt(document.getElementById("secondNumber").value) || 0;
+            let sum = first + second;
+            document.getElementById("sumNumber").value = sum;
+        }
+    </script>
+
+    
+        
+    </script>
+</body>
+</html>
